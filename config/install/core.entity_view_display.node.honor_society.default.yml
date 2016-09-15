@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.honor_society.body
+    - field.field.node.honor_society.field_staff_sponsor
+    - node.type.honor_society
+  module:
+    - text
+    - user
+id: node.honor_society.default
+targetEntityType: node
+bundle: honor_society
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_staff_sponsor:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

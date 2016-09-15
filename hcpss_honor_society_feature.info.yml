@@ -1,0 +1,17 @@
+name: 'Honor Society Feature'
+description: 'Honor society content type.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - hcpss_staff_feature
+  - hcpss_team_feature
+  - inline_entity_form
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - views
+version: 8.x-1.0
+package: HCPSS

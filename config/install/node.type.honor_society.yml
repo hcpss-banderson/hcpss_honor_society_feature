@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Honor Society'
+type: honor_society
+description: 'Use <em>honor society</em> to post information about your honor societies.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.honor_society.body
+    - field.field.node.honor_society.field_staff_sponsor
+    - node.type.honor_society
+  module:
+    - text
+    - user
+id: node.honor_society.teaser
+targetEntityType: node
+bundle: honor_society
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_staff_sponsor: true
